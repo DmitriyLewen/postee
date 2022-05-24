@@ -12,7 +12,7 @@ COPY . /server
 WORKDIR /server/ui/backend
 RUN go build -o posteeui
 
-FROM alpine:3.15
+FROM alpine:3.16.0
 EXPOSE 8000
 
 RUN mkdir /uiserver
